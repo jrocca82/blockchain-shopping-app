@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { AnyAction, bindActionCreators, Dispatch } from "redux";
-import { useNavigate } from "react-router-dom";
 import { Snackbar, Button } from "@mui/material";
 
 const ClaimFunds = () => {

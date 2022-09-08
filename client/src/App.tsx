@@ -1,18 +1,14 @@
 
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
-import Web3 from "web3";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import MerchandiseView from "./components/MerchView";
+import AddMerchandise from "./components/AddMerch";
+import ClaimFunds from "./components/ClaimFunds";
 
 /*
  * Import global styles into entire app
  */
 import "./components/styles/app.scss";
-
-/* application containers & components */
-import { useTheme } from "@mui/system";
-import Header from "./components/Header";
-import MerchandiseView from "./components/MerchView";
-import AddMerchandise from "./components/AddMerch";
-import ClaimFunds from "./components/ClaimFunds";
 
 const Main = () => {
 	return (

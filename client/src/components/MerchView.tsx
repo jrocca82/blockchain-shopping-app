@@ -1,9 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Avatar from "@mui/material/Avatar";
 import { blue, indigo } from "@mui/material/colors";
-import { Card, CardHeader, CardContent, Fab, Chip, ToggleButton } from "@mui/material";
+import {
+	Card,
+	CardHeader,
+	CardContent,
+	Fab,
+	Chip,
+	ToggleButton,
+} from "@mui/material";
 import { MerchType } from "../types/MerchType";
-import AddIcon from '@mui/icons-material/Add';
+import AddIcon from "@mui/icons-material/Add";
 
 const toggleStyle = {
 	block: {
@@ -64,10 +71,7 @@ const MerchandiseView = ({
 								}
 							/>
 							<div style={toggleStyle.block}>
-								<ToggleButton
-								value={"Shipped"}
-									disabled={!merch.itemSold}
-								/>
+								<ToggleButton value={"Shipped"} disabled={!merch.itemSold} />
 								<ToggleButton value="Received" disabled={!merch.itemShipped} />
 							</div>
 						</CardContent>
